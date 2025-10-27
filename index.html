@@ -1,74 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varshini's Website</title>
 
-    <!-- Google Fonts -->
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@500&family=Work+Sans&display=swap" rel="stylesheet">
 
-    <!-- CSS Libraries -->
+    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">ARAIYAR SEVAI</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light sticky-top p-0">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <a href="index.html" class="navbar-brand bg-primary py-4 px-5 me-0">
+                <h1 class="mb-0"><i class="bi bi-temple"></i>ARAIYAR SEVAI</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
+            <div class="collapse navbar-collapse p-3" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="price.html" class="nav-item nav-link">Pricing</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="d-flex">
+                    <a class="btn btn-primary btn-sm-square me-3" href="https://www.instagram.com/varshini_mukundan?igsh=MWVwbHZ4cHRsNjFjcQ%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid p-0 hero-header bg-light mb-5">
+        <div class="container p-0">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 hero-header-text py-5">
+                    <div class="py-5 px-3 ps-lg-0">
+                        <h1 class="font-dancing-script text-primary animated slideInLeft">Welcome</h1>
+                        <h1 class="display-1 mb-4 animated slideInLeft">A RITUALISTIC RENDITION OF THE AZHWARS NALAYIRA DIVYA PRABANDAM</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="owl-carousel header-carousel animated fadeIn">
+                        <img class="img-fluid" src="hero-slider-1.jpg" alt="">
+                        <img class="img-fluid" src="hero-slider-2.jpg" alt="">
+                        <img class="img-fluid" src="hero-slider-3.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <div class="container my-5 text-center">
-        <h1 class="display-4 text-primary font-dancing-script">Welcome to Ariyar Sevai</h1>
-        <p class="lead">A ritualistic rendition of the Azhwars Nalayira Divya Prabandham</p>
-        <img src="img/hero-slider-1.jpg" class="img-fluid rounded" alt="Ariyar Sevai">
     </div>
+    <!-- Hero End -->
 
-    <!-- About Preview -->
-    <div class="container my-5 text-center">
-        <h2 class="text-primary font-dancing-script">About Ariyar Sevai</h2>
-        <p>Araiyar Sevai is a Tamil Hindu performing art form performed in temples, centered on the ritual singing and enactment of the Divya Prabandham.</p>
-        <a href="about.html" class="btn btn-primary">Learn More</a>
-    </div>
-
-    <!-- Gallery Preview -->
-    <div class="container my-5 text-center">
-        <h2 class="text-primary font-dancing-script">Gallery</h2>
-        <div class="row g-3">
-            <div class="col-md-4"><a href="img/gallery-1.jpg" data-lightbox="gallery"><img src="img/gallery-1.jpg" class="img-fluid" alt="Gallery 1"></a></div>
-            <div class="col-md-4"><a href="img/gallery-2.jpg" data-lightbox="gallery"><img src="img/gallery-2.jpg" class="img-fluid" alt="Gallery 2"></a></div>
-            <div class="col-md-4"><a href="img/gallery-3.jpg" data-lightbox="gallery"><img src="img/gallery-3.jpg" class="img-fluid" alt="Gallery 3"></a></div>
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
+                    <img class="img-fluid mb-3" src="about.jpg" alt="About Image">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="mb-5">அரையர் சேவை</h1>
+                    <p class="mb-4">
+                        Araiyar Sevai is a Tamil Hindu performing art form centered on the ritual singing and enactment of the hymns of the Divya Prabandham. It is performed inside Vaishnavite temples in Tamil Nadu by hereditary performers known as Araiyars.
+                    </p>
+                </div>
+            </div>
         </div>
-        <a href="gallery.html" class="btn btn-primary mt-3">View All</a>
+    </div>
+    <!-- About End -->
+
+    <!-- Gallery Start -->
+    <div class="container-fluid gallery py-5">
+        <div class="container">
+            <div class="text-center wow fadeIn" data-wow-delay="0.2s">
+                <h1 class="font-dancing-script text-primary">Varshini M.</h1>
+                <h1 class="mb-5">
+                    M. Varshini is a passionate student of classical arts, pursuing a Diploma in Bharatanatyam and a B.A. in English at the University of Madras. She promotes Araiyar Sevai — the ancient Tamil tradition uniting music, dance, and devotion.
+                </h1>
+            </div>
+            <div class="row g-0">
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="gallery-item h-100">
+                        <img src="gallery-1.jpg" class="img-fluid w-100 h-100" alt="">
+                        <div class="gallery-icon">
+                            <a href="gallery-1.jpg" class="btn btn-primary btn-lg-square" data-lightbox="Gallery-1"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer position-relative bg-dark text-white-50 py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 pe-lg-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="display-5 text-primary mb-0">Varshini.M</h1>
+                    </a>
+                    <p>DIPLOMA IN BHARATHANATYAM.</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-2"></i>No.141/142, Sugarag Illam, 10th street, Sri om nagar, Thodukadu, Sriperumbudur-602105</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-2"></i>+91 6380324994</p>
+                    <p><i class="fa fa-envelope me-2"></i>varshinimukundan07@gmail.com</p>
+                    <div class="d-flex mt-4">
+                        <a class="btn btn-sm-square btn-primary me-3" href="https://www.instagram.com/varshini_mukundan?igsh=MWVwbHZ4cHRsNjFjcQ%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright -->
+    <div class="container-fluid bg-dark text-white border-top border-secondary py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            Designed By <a class="border-bottom" href="#">Varshini.M</a>
+        </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2025 Varshini.M. All rights reserved.</p>
-    </footer>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+    <!-- JS Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
